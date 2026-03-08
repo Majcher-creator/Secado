@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -14,12 +15,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="text-accent">SECADO</span>
-            </h3>
-            <p className="text-sm text-gray-300 mb-2">
-              Śląskie Centrum Dachowe
-            </p>
+            <div className="mb-4">
+              <Logo variant="compact" dark />
+            </div>
             <p className="text-sm text-gray-400">
               Profesjonalna hurtownia dekarska i kompleksowe usługi dekarskie.
               Działamy od 2012 roku.

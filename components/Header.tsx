@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,13 +36,8 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl md:text-3xl font-bold">
-              <span className="text-primary">SECADO</span>
-            </div>
-            <div className="hidden md:block text-sm text-gray-600 max-w-[200px]">
-              Śląskie Centrum Dachowe
-            </div>
+          <Link href="/" className="flex items-center">
+            <Logo variant="compact" />
           </Link>
 
           {/* Desktop Navigation */}
